@@ -12,8 +12,7 @@ $array = [51158,1856,8459,67957,59748,58213,90876,39621,66570,64204,79935,27892,
 print implode(',', quickSort($array));
  
 /** @param array $input array to be sorted */
-function quickSort(array $input)
-{
+function quickSort(array $input) {
     $lt = [];
     $gt = [];
 
@@ -23,8 +22,7 @@ function quickSort(array $input)
     /* take first value in array as pivot */
     $shift = array_shift($input);
 
-    foreach($input as $value)
-    {
+    foreach($input as $value) {
         /* split values into 2 arrays less than or greater than the current value */
         $value <= $shift ? $lt[] = $value : $gt[] = $value;
     }

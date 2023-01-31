@@ -13,21 +13,18 @@ $array = [51158,1856,8459,67957,59748,58213,90876,39621,66570,64204,79935,27892,
 print implode(',', bubbleSort($array));
 
 /** @param array $input array to be sorted */
-function bubbleSort(array $input)
-{
-    do
-    {
+function bubbleSort(array $input) {
+    do {
         $swapped = false;
 
-        for ($i = 0, $count = sizeof($input) - 1; $i < $count; $i++)
-        {
-            if ($input[$i + 1] < $input[$i])
-            {
+        for ($i = 0, $count = sizeof($input) - 1; $i < $count; $i++) {
+            if ($input[$i + 1] < $input[$i]) {
                 list ($input[$i + 1], $input[$i]) = [$input[$i], $input[$i + 1]];
                 $swapped = true;
             }
         }
     }
+
     while($swapped);
 
     return $input;

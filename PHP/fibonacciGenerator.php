@@ -8,28 +8,23 @@
  *  This has a pretty large big O complexity and is thus not great for larger datasets.
  */ 
 
-foreach(loop(100, fib()) as $item)
-{
+foreach(loop(100, fib()) as $item) {
     print $item.',';
 }
 
-function loop($i, Generator $set)
-{
-    while($i-- > 0 && $set->valid())
-    {
+function loop($i, Generator $set) {
+    while($i-- > 0 && $set->valid()) {
         yield $set->current();
         $set->next();
     }
 }
 
 /* Fibonacci generator */
-function fib()
-{
+function fib() {
     yield $i = 0;
     yield $j = 1;
 
-    while(true)
-    {
+    while(true) {
         yield $k = $i + $j;
         $i = $j;
         $j = $k;
