@@ -1,7 +1,7 @@
 <?php
 /**
  * @author Andrew S Erwin
- * @link https://gitlab.com/andrewthecoder
+ * @link https://github.com/erwininteractive
  *  
  *  Bubble sort is one of the simplest sorting algorithms. We simply swap adjaect elements if they are in the wrong order.
  *  That is, if the current value is greater the next, swap and then go to the next value.

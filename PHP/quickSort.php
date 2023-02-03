@@ -1,7 +1,7 @@
 <?php
 /**
  * @author Andrew S Erwin
- * @link https://gitlab.com/andrewthecoder
+ * @link https://github.com/erwininteractive
  *  
  * This is actually not, technically speaking a quick sort function. it is a "divide and conquer" hybrid of quick sort and
  * merge sort.

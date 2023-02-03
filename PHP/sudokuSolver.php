@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @author Andrew S Erwin
  * @link https://github.com/erwininteractive
